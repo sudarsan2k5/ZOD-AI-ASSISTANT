@@ -35,7 +35,7 @@ def analyze_image_with_query(query: str) -> str:
     """
 
     img_b64 = capture_image()
-    print(img_b64)
+    # print(img_b64)
     model = "meta-llama/llama-4-maverick-17b-128e-instruct"
 
     if not query or not img_b64:
@@ -64,5 +64,5 @@ def analyze_image_with_query(query: str) -> str:
     )
     return chat_completion.choices[0].message.content
 
-query = "How many people do you see ?"
-print(analyze_image_with_query(query))
+# query = "How many people do you see "
+# print(analyze_image_with_query(query))
