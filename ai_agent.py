@@ -32,4 +32,4 @@ def ask_agent(user_query: str) -> str:
     response = agent.invoke(input_message)
     return response['messages'][-1].content
 
-print(ask_agent(user_query="DO i have a beard ?"))
+print(ask_agent(user_query="How is my hair style do you like it ?"))
